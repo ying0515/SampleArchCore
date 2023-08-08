@@ -15,7 +15,8 @@ namespace SampleArch.Web.Module
             builder.RegisterAssemblyTypes(Assembly.Load("SampleArch.Service"))
                    .Where(t => t.Name.EndsWith("Service"))
                    .AsImplementedInterfaces()
-                   .InstancePerLifetimeScope();
+                   .InstancePerDependency();
+            //.InstancePerLifetimeScope();
 
         }
     }

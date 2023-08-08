@@ -18,4 +18,8 @@
     <ProjectReference Include="..\SampleArch.Service\SampleArch.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DatabaseFile\" />
+  </ItemGroup>
+
 </Project>

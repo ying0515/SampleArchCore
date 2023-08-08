@@ -6,25 +6,16 @@ namespace SampleArchCore.Web.Controllers
 {
     public class CountryController : Controller
     {
-        //initialize service object
-        ICountryService _CountryService;
+        private readonly SampleArchContext _context;
 
-        public CountryController(ICountryService countryService)
+        public CountryController(SampleArchContext context)
         {
-            _CountryService = countryService;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            var data = _CountryService.GetAll();
-            var aa = data.ToList();
-
-            //using (var db = new SampleArchContext())
-            //{
-            //    var data = db.Countries.ToList();
-            //    var ss = "123";
-            //}
-
+            var data = _context.Countries.ToList();
             return View();
         }
 

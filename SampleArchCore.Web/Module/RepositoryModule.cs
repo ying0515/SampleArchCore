@@ -14,7 +14,8 @@ namespace SampleArch.Web.Module
             builder.RegisterAssemblyTypes(Assembly.Load("SampleArch.Repository"))
                    .Where(t => t.Name.EndsWith("Repository"))
                    .AsImplementedInterfaces()
-                   .InstancePerLifetimeScope();
+                   .InstancePerDependency();
+                   //.InstancePerLifetimeScope();
         }
     }
 }
