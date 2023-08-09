@@ -4,6 +4,7 @@ using SampleArch.Repository;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using SampleArch.Model;
+using SampleArch.Model.Database;
 
 namespace SampleArchCore.Web.Module
 {

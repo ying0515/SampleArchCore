@@ -4,6 +4,7 @@ using SampleArch.Web.Module;
 using SampleArch.Model;
 using Microsoft.EntityFrameworkCore;
 using SampleArchCore.Web.Module;
+using SampleArch.Model.Database;
 
 var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 {
@@ -40,10 +41,10 @@ builder.Host.ConfigureContainer<ContainerBuilder>(builder => builder.RegisterMod
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-}
+//if (!app.Environment.IsDevelopment())
+//{
+//    app.UseExceptionHandler("/Home/Error");
+//}
 app.UseStaticFiles();
 
 app.UseRouting();

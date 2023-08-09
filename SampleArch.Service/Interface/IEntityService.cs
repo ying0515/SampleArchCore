@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace SampleArch.Service.Interface
 {
     public interface IEntityService<T> : IService
-        where T : BaseEntity
+        where T : class
     {
         void Create(T entity);
         void Delete(T entity);

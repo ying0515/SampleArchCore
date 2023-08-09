@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Microsoft.EntityFrameworkCore;
 using SampleArch.Model;
+using SampleArch.Model.Database;
 using SampleArch.Repository;
 using SampleArch.Repository.Interface;
 using System;

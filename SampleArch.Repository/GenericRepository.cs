@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 namespace SampleArch.Repository
 {
     public abstract class GenericRepository<T> : IGenericRepository<T>
-        where T : BaseEntity
+        where T : class
     {
         protected DbContext _entities;
         //protected readonly IDbSet<T> _dbset;

@@ -1,4 +1,5 @@
 ﻿using SampleArch.Model;
+using SampleArch.Model.Database.POCO;
 using System;
 using System.Collections.Generic;
 using System.Linq;

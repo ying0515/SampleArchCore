@@ -1,4 +1,5 @@
 ﻿using SampleArch.Model;
+using SampleArch.Model.Database.POCO;
 using SampleArch.Repository.Interface;
 using SampleArch.Service.Interface;
 using System;

@@ -1,4 +1,5 @@
 ﻿using SampleArch.Model;
+using SampleArch.Model.Database.POCO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace SampleArch.Service.Interface
 {
     public interface ICountryService : IEntityService<Country>
     {
-        Country GetById(int Id);
+        Country GetById(int id);
     }
 }

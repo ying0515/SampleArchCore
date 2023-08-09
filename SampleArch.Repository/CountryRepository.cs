@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SampleArch.Model;
+using SampleArch.Model.Database.POCO;
 using SampleArch.Repository.Interface;
 using System;
 using System.Collections.Generic;

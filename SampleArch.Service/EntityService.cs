@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SampleArch.Service
 {
-    public abstract class EntityService<T> : IEntityService<T> where T : BaseEntity
+    public abstract class EntityService<T> : IEntityService<T> where T : class
     {
         IUnitOfWork _unitOfWork;
         IGenericRepository<T> _repository;

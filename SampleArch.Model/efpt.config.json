@@ -1,0 +1,47 @@
+﻿{
+   "CodeGenerationMode": 3,
+   "ContextClassName": "SampleArchContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Database",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "SampleArch.Model",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 3,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[Country]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Person]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "SampleArch.mdf",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": true
+}

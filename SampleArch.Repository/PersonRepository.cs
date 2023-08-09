@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SampleArch.Model;
+using SampleArch.Model.Database.POCO;
 using SampleArch.Repository.Interface;
 using System;
 using System.Collections.Generic;
@@ -19,12 +20,12 @@ namespace SampleArch.Repository
 
         public override IEnumerable<Person> GetAll()
         {
-            return _entities.Set<Person>().Include(x => x.Country).AsEnumerable();
+            return _entities.Set<Person>().AsEnumerable();
         }
 
         public Person GetById(long id)
         {
-            return _dbset.Include(x => x.Country).Where(x => x.Id == id).FirstOrDefault();
+            return _dbset.Where(x => x.Id == id).FirstOrDefault();
         }
     }
 }

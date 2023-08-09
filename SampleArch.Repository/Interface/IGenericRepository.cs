@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SampleArch.Repository.Interface
 {
-    public interface IGenericRepository<T> where T : BaseEntity
+    public interface IGenericRepository<T> where T : class
     {
         IEnumerable<T> GetAll();
         IEnumerable<T> FindBy(Expression<Func<T, bool>> predicate);
